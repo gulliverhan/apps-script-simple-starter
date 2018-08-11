@@ -1,0 +1,14 @@
+{
+  "timeZone": "Europe/Paris",
+  "dependencies": {
+    "enabledAdvancedServices": [],
+    "libraries": [
+      {
+        "userSymbol": "GSUnit",
+        "libraryId": "MIUhnnCDES0N3YHPEWX9DUtkh30YExdAc",
+        "version": "1"
+      }   
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER"
+}

@@ -19,8 +19,11 @@ gulp.task('lint', () => {
 });
 
 gulp.task('push', function() {
-  process.chdir('./apps_script/');
   exec('clasp push');
+});
+
+gulp.task('open', function() {
+  exec('clasp open');
 });
 
 gulp.task('watch', function() {

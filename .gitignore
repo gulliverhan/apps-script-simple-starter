@@ -7,6 +7,4 @@ node_modules/
 .npm
 .env
 .nyc_output
-*.lock
 /tmp
-.clasprc.json

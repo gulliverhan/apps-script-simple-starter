@@ -4,7 +4,9 @@
   "extends": ["eslint:recommended", "google", "plugin:prettier/recommended"],
   "plugins": ["prettier", "googleappsscript"],
   "env": {
+    "browser": true,
     "googleappsscript/googleappsscript": true
+
   },
   "rules": {
     "prettier/prettier": "error",
@@ -15,7 +17,8 @@
     "require-jsdoc": "off",
     "no-unused-vars": ["warn", { "varsIgnorePattern": "^[A-Z_]*$" }],
     "no-console":"warn",
-    "prefer-rest-params":"off"
+    "prefer-rest-params":"off",
+    "no-throw-literal" : "off"
   },
   "globals": {
     "CardService": true,
