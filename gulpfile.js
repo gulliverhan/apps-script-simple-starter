@@ -1,3 +1,4 @@
+/* eslint-disable no-invalid-this, no-console,no-unused-vars */
 const gulp = require('gulp');
 const exec = require('child_process').exec;
 const eslint = require('gulp-eslint');
@@ -18,12 +19,20 @@ gulp.task('lint', () => {
   );
 });
 
-gulp.task('push', function() {
-  exec('clasp push');
+gulp.task('push', function(cb) {
+  exec('clasp push', function(err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
 });
 
-gulp.task('open', function() {
-  exec('clasp open');
+gulp.task('open', function(cb) {
+  exec('clasp open', function(err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
 });
 
 gulp.task('watch', function() {
